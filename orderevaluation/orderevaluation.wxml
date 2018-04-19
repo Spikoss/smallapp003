@@ -1,0 +1,27 @@
+<!--pages/home/orderevaluation/orderevaluation.wxml -->
+<view class='box'>
+  <view class='orderevaluationAllBox'>
+    <view class='orderevaluationBox'>
+      <text class='orderevaluationItemText'>您的电话</text>
+      <input class='orderevaluationItemText1' placeholder='请输入您的联系电话' placeholder-class='orderevaluationItemEdit' maxlength='11' type='number'></input>
+    </view>
+  </view>
+
+  <view class='grayline'></view>
+
+  <view class='orderevaluationAllBox'>
+    <view class='orderevaluationBox'>
+      <text class='orderevaluationItemText'>您的邮箱</text>
+      <input class='orderevaluationItemText1' placeholder='请输入您的联系邮箱' placeholder-class='orderevaluationItemEdit'></input>
+    </view>
+  </view>
+
+  <view class='grayline'></view>
+  
+  <textarea class='orderevaluationItemTextarea' placeholder-class='orderevaluationItemEdit' placeholder='请输入您的鉴宝需求，我们将在第一时间为您服务'  maxlength='500' bindinput="culNums">
+    <text class='orderevaluationTextareaText'><text id="num">{{num}}</text>/500</text>
+  </textarea>
+
+<button class='orderevaluationButton'>提交</button>
+
+</view>
